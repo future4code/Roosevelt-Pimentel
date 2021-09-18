@@ -11,14 +11,15 @@
 
 //EXERCICIO 2
 
-const comidasFavoritas = ["Lasanha Bolonhesa" , "Escondidinho de carne maluca" , "Strogonoff de frango" ,
-"pizza" , "Hamburguer artesanal"]
-const mensagem = "essas são minhas comidas favoritas:"
+//const comidasFavoritas = ["Lasanha Bolonhesa" , "Escondidinho de carne maluca" , "Strogonoff de frango" ,
+//"pizza" , "Hamburguer artesanal"]
+//const mensagem = "essas são minhas comidas favoritas:"
 
-console.log(mensagem)
-console.log(comidasFavoritas)
+//console.log(mensagem)
+//console.log(comidasFavoritas)
 
-const pergunta = prompt("Qual a sua comida favorita?")
-comidasFavoritas.replaceAll("Escondidinho de carne maluca" , pergunta)
+//EXERCICIO 3
 
-console.log(comidasFavoritas)
+//const listaDeTarefas = prompt("Cite 3 tarefas que você realiza no seu dia a dia")
+
+//const array = {listaDeTarefas}
