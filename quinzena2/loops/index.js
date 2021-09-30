@@ -89,31 +89,31 @@
 //    os números pares do array original e *imprima* esse novo array
 
 
-let arrayOriginal = [10, 20, 30, 40 ,50]
-let arrayPares = []
-for(let base of arrayOriginal) {
-    if (base % 2 === 0){
-        arrayPares.push(base)
-    }
-console.log(base)
-}
-console.log(arrayPares)
+// let arrayOriginal = [10, 20, 30, 40 ,50]
+// let arrayPares = []
+// for(let base of arrayOriginal) {
+//     if (base % 2 === 0){
+//         arrayPares.push(base)
+//     }
+// console.log(base)
+// }
+// console.log(arrayPares)
 
 // d) Escreva um programa que *crie* um novo array contendo strings,
 //    da seguinte forma: "O elemento do índex `i` é: `numero`". 
 //    Depois, *imprima* este novo array.
 
-// let arrayNum = [10, 15, 20, 25, 30, 35, 40, 45, 50]
-// for(let num of arrayNum) {}
-// let arrayOriginal = ["o", "elemento" , "do", "index" , "base" , "é" , arrayNum]
-// for(let base of arrayOriginal) {
-// console.log(base)
-// }
+let arrayNum = [10, 15, 20, 25, 30, 35, 40, 45, 50]
+for(let num of arrayNum) {}
+let arrayOriginal = ["o", "elemento" , "do", "index" , "base" , "é" , arrayNum]
+for(let base of arrayOriginal) {
+console.log(base)
+}
 
 // e) Escreva um programa que imprima no console o maior
 //    e o menor números contidos no array original
 
-//   let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45, 50]
-//    for(let base = 0; base < arrayOriginal.length; base ++) {
-//    console.log(arrayOriginal[base]);
+// let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45, 50]
+// for(let base of arrayOriginal) {
+// console.log(base)
 // }
