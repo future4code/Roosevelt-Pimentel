@@ -19,6 +19,10 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: outset;
 }
 
 button:focus {
@@ -29,7 +33,7 @@ img {
     width: 80px;
 }
 
-div>p:first-child {
+div > p:first-child {
     display: inline;
 }
 
@@ -86,10 +90,10 @@ div img {
     padding: 200px 0;
     font-size: 60px;
 }
-#container-de-descricao>p {
+#container-de-descricao> p {
+    padding-left : 550px;
     width: 200px;
-    padding: 10px 5px 10px 5px;
-    text-align: center;
+    
 }
 
 /**
