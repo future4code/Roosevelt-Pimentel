@@ -104,11 +104,12 @@ div img {
 
 div:nth-child(2),
 div:last-child {
-    text-align: center;
+text-align: center;
 }
 
 table {
     width: 60%;
+    margin: auto
 }
 
 td button > :hover  {
@@ -134,7 +135,6 @@ td button > :hover  {
     border-radius: 5px;
     font-size: 10px;
     color: black;
-    
 }
 
 #back-button:hover {
