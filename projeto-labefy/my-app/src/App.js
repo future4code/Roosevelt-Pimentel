@@ -1,19 +1,19 @@
 import React from "react";
 import CriarPlaylist from "./components/CriarPlaylist";
-import ListaDePlaylist from "./components/ListaDePlaylists";
+import ListaDePlaylist from "./components/ListaDePlaylist";
 
 
 export default class App extends React.Component {
   state = {
-    telaAtual: "CriarPlaylist"
+    telaAtual: "ListaDePlaylist"
   }
-
+  
   escolheTela = () => {
     switch (this.state.telaAtual) {
       case "CriarPlaylist":
-        return <CriarPlaylist irParaCriarPlaylist={this.irParaCriarPlaylist} />
-      case "ListaDePlayList":
-        return <ListaDePlaylist irParaListaDePlaylist={this.irParaListaDePlaylist} />
+        return <CriarPlaylist irParaListaDePlaylist={this.irParaListaDePlaylist} />
+      case "ListaDePlaylist":
+        return <ListaDePlaylist irParaCriarPlaylist={this.irParaCriarPlaylist} />
       default:
         return <div> Erro! Músicas não identificada.</div>
     }

@@ -24,8 +24,7 @@ export default class CriarPlaylist extends React.Component {
             })
 
             .catch((err) => { 
-                alert(err.res.data.message)
-
+                alert(err.res)
             })
     }
 
