@@ -56,10 +56,27 @@ function Match() {
       });
   };
 
+  const listaDeMatachs = async () => {
+    await axios
+    .get(
+      `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/matches`
+    )
+    .then((response) => {
+      setListMatch(response.data.profile);
+    })
+    .catch((error) => {
+      alert(error);
+    });
+  };
+
   useEffect(() => {
     pegaFotos();
   }, []);
-
+  
+  useEffect(() => {
+    listaDeMatachs();
+  }, []);
+  
   const gostei = (choice) => {
     const body = {
       id: `${usuario.id}`,
