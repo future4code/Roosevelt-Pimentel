@@ -1,11 +1,15 @@
-import React from "react";
+import React from "react"
 
-const CharacterDetailPage = () => {
-  return (
-    <div>
-      <h1> CharacterDetailPage </h1>
-    </div>
-  );
+export default class CharacterDetailPage extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> CharacterListPage </h1>
+        <button onClick={() => this.props.goToPage("Lista")}>ListPage</button>
+      </div>
+    );
+  }
 }
 
-export default CharacterDetailPage;
+
+
