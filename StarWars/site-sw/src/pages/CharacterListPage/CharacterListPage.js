@@ -29,6 +29,7 @@ function CharacterListPage(props) {
     )
   })
 
+
   return (
     <div>
       <h1> CharacterListPage </h1>
