@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+
 function CharacterListPage(props) {
 
   const [list, setList] = useState([])
@@ -24,8 +25,9 @@ function CharacterListPage(props) {
   }, [])
 
   const lista = list.length && list.map((character) => {
+    console.log(character)
     return (
-      <p>{character.name}</p>
+      <button onClick={() => props.goToPage("Detalhe")}>{character.name}</button>
     )
   })
 
@@ -34,7 +36,6 @@ function CharacterListPage(props) {
     <div>
       <h1> CharacterListPage </h1>
       {lista}
-      <button onClick={() => props.goToPage("Detalhe")}>DetailPage</button>
     </div>
   )
 

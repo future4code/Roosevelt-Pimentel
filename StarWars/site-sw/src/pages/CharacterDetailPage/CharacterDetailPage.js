@@ -1,44 +1,35 @@
 import axios from "axios";
-import React, { useState ,useEffect } from "react"
+import React, { useState, useEffect } from "react";
 
+function CharacterDetailPage(props) {
 
-function goToDetailsPage(props) {
+  const [detail, setDetailsPage] = useState([])
 
-  const [details, setDetails] = useState([])
-
-  const detailsUrl = () => {
-    const url = "https://swapi.py4e.com/api/people/"
+  const goToDetailsPage = () => {
+    const url = "https://swapi.py4e.com/api/people/1/"
     axios.get(url)
       .then((res) => {
-        setList(res.data.results)
-        console.log(res.data.results)
+        setDetailsPage(res.data)
+        console.log(res.data)
       })
       .catch((err) => {
         console.log(err)
-        alert("Ocorreu um erro ao carregar a Lista")
+        alert("Ocorreu um erro ao carregar os detalhes")
       })
   }
-
-
+  
   useEffect(() => {
-    detailsUrl()
+    goToDetailsPage()
   }, [])
-
-  const Detalhe = details.length && details.map((character) => {
-    return (
-      <p>{character.name}</p>
-    )
-  })
-
-
+  
   return (
     <div>
-      <h1> CharacterDetailPage </h1>
-      {Detalhe}
-      <button onClick={() => props.goToPage("Lista")}>ListPage</button>
+      <button onClick={() => props.goToPage("Lista")}>Voltar para lista de personagens</button>
     </div>
-  )
-
+  );
+  
 }
-export default goToDetailsPage
 
+
+
+export default CharacterDetailPage
