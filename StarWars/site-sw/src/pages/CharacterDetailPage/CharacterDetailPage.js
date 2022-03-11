@@ -3,31 +3,33 @@ import React, { useState, useEffect } from "react";
 
 function CharacterDetailPage(props) {
 
-  const [detail, setDetailsPage] = useState([])
+  const [profile, setProfile] = useState({})
 
-  const goToDetailsPage = () => {
-    const url = "https://swapi.py4e.com/api/people/1/"
-    axios.get(url)
+  const getProfile = () => {
+    axios.get(props.url)
       .then((res) => {
-        setDetailsPage(res.data)
-        console.log(res.data)
+        setProfile(res.data)
       })
       .catch((err) => {
         console.log(err)
         alert("Ocorreu um erro ao carregar os detalhes")
       })
   }
-  
+
   useEffect(() => {
-    goToDetailsPage()
+    getProfile()
   }, [])
   
+
   return (
     <div>
+      <h1> Detalhes do Personagem </h1>
+      <p>Nome: {profile.name} </p>
+      <p>Planeta de origem: {}</p>
       <button onClick={() => props.goToPage("Lista")}>Voltar para lista de personagens</button>
     </div>
   );
-  
+
 }
 
 

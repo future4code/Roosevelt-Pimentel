@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { ContainerButton} from "./styled"
 
 
 function CharacterListPage(props) {
-
   const [list, setList] = useState([])
 
   const getCharacterList = () => {
@@ -11,7 +11,6 @@ function CharacterListPage(props) {
     axios.get(url)
       .then((res) => {
         setList(res.data.results)
-        console.log(res.data.results)
       })
       .catch((err) => {
         console.log(err)
@@ -19,22 +18,22 @@ function CharacterListPage(props) {
       })
   }
 
-
   useEffect(() => {
     getCharacterList()
   }, [])
 
+
   const lista = list.length && list.map((character) => {
-    console.log(character)
     return (
-      <button onClick={() => props.goToPage("Detalhe")}>{character.name}</button>
+      <div >
+        <ContainerButton key={character.name} onClick={() => props.goToDetailsPage(character.url)}>{character.name}</ContainerButton>
+      </div>
     )
   })
 
-
   return (
     <div>
-      <h1> CharacterListPage </h1>
+      <h1> Lista de personagens</h1>
       {lista}
     </div>
   )

@@ -4,15 +4,15 @@ import CharacterListPage from "./pages/CharacterListPage/CharacterListPage"
 
 function App() {
 
-  const [DetailPage, setDetailsPage] = useState("Detalhe")
+  const [character, setCharacter] = useState("")
   const [currentPage, setCurrentPage] = useState("Lista")
 
   const selectPage = () => {
     switch (currentPage) {
       case "Lista":
-        return <CharacterListPage goToPage={goToPage} />;
+        return <CharacterListPage goToDetailsPage={goToDetailsPage}/>;
       case "Detalhe":
-        return <CharacterDetailPage goToPage={goToPage} />;
+        return <CharacterDetailPage goToPage={goToPage} url={character}/>;
       default:
         return <div> Erro! Nada encontrado.</div>
     };
@@ -22,9 +22,9 @@ function App() {
     setCurrentPage(nomeTela);
   }
 
-  const goToDetailsPage = (name) => {
-    setDetailsPage(name)
-    setCurrentPage("Detalhes")
+  const goToDetailsPage = (url) => {
+    setCharacter(url)
+    setCurrentPage("Detalhe")
   }
 
   return (
@@ -32,9 +32,6 @@ function App() {
       {selectPage()}
     </div>
   )
-
-
-
 }
 
 export default App;
