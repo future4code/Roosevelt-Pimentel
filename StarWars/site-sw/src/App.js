@@ -6,13 +6,14 @@ function App() {
 
   const [character, setCharacter] = useState("")
   const [currentPage, setCurrentPage] = useState("Lista")
+  const [planets, setPlanets] = useState({})
 
   const selectPage = () => {
     switch (currentPage) {
       case "Lista":
-        return <CharacterListPage goToDetailsPage={goToDetailsPage}/>;
+        return <CharacterListPage goToDetailsPage={goToDetailsPage} goToPlanetsPage={goToPlanetsPage}/>;
       case "Detalhe":
-        return <CharacterDetailPage goToPage={goToPage} url={character}/>;
+        return <CharacterDetailPage goToPage={goToPage} url={character} id={planets}/>;
       default:
         return <div> Erro! Nada encontrado.</div>
     };
@@ -26,6 +27,12 @@ function App() {
     setCharacter(url)
     setCurrentPage("Detalhe")
   }
+
+  const goToPlanetsPage = (id) => {
+    setPlanets(id)
+    setCurrentPage("Detalhe")
+  }
+
 
   return (
     <div>
