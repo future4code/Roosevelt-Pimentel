@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{useEffect , useState}from "react"; 
+import styled from "styled-components";
+import Cabeca from './components/Cabeca';
+import Match from './components/match';
+import ListaMatch from './components/listaMatch';
+
+const Container = styled.div`
+margin: 20px 35vw;
+display: flex; 
+flex-direction: column;
+justify-content: space-between;
+height: 90vh;
+width:420px;
+`
 
 function App() {
+  const [telaAtual, setTelaAtual] = useState("lista")
+
+  const mudaTela= () => {
+    if(telaAtual === "perfil"){
+      return <Match renderizaTela={renderizaTela}/> 
+    } else {
+      return <ListaMatch/>
+    }
+  }
+const renderizaTela = () => {
+telaAtual === "perfil"?
+setTelaAtual("list"): setTelaAtual("perfil")
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Cabeca renderizaTela = {renderizaTela}/>
+      {mudaTela()}
+    </Container>
   );
 }
 
 export default App;
+
