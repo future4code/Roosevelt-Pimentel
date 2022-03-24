@@ -1,3 +1,4 @@
+// <<<<<<< quinzena2-projeto
 // Exercícios de interpretação de código
 
 // 1-O que o código abaixo está fazendo? Qual o resultado impresso no console?
@@ -80,10 +81,10 @@
 
 // b) Escreva um programa que *imprime* cada um dos valores do array original divididos por 10
 
-let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45, 50]
-for(let item of arrayOriginal) {
-console.log(item)
-}
+// let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45, 50]
+// for(let item of arrayOriginal) {
+// console.log(item)
+// }
 
 // c) Escreva um programa que *crie* um novo array contendo, somente, os números pares do array original e *imprima* esse novo array
 
@@ -95,3 +96,76 @@ console.log(item)
 //    for(let base = 0; base < arrayOriginal.length; base ++) {
 //    console.log(arrayOriginal[base]);
 // }
+
+// // Exercício 1
+
+// let primeiroNumero = Number(prompt("Digite um número"))
+// let segundoNumero = Number(prompt("Digite outro número"))
+
+// function compararNumeros( num1, num2) {
+//    if (num1 === num2) {
+//       console.log( "Sim, os números são iguais! =D")
+//    }
+// }
+
+// // compararNumeros(primeiroNumero, segundoNumero)
+
+// // Exercício 2
+
+// function compararNumerosComElse(num1, num2) {
+//    if (num1 === num2) {
+//       console.log("Os números são iguais!")
+//    } else {
+
+//       console.log("OS números são diferentes! =/")
+//    }
+// }
+// // outras lógicas...
+
+
+// compararNumerosComElse(primeiroNumero, segundoNumero)
+
+
+// let primeiroNumero = number(prompt("insira um numero"))
+// let segundoNumero = number(prompt("insira outro numero"))
+
+// function comparação(num1, num2) {
+//     if(num1 === num2) {
+//         console.log("Sim, o numero é igual")
+//     }
+//     else if(num1 > num2) {
+//         console.log("Numero 1 maior que o 2")
+//     }
+//     else (num1 < num2) {  
+//         console.log("Numero 1 menor que o 2")
+//     }
+// }
+
+// comparação(num1, num2)
+
+// const concluiuEnsinoMedio = prompt("Você concluiu o ensino medio?")
+// const temMaisDeDezoitoAnos = prompt("Você tem maior idade?")
+// const fazOutraFaculdade = prompt("Você faz outra faculdade?")
+
+// function validarCandidato(
+//     concluiuEnsinoMedio,
+//     temMaisDeDezoitoAnos,
+//     fazOutraFaculdade 
+// ) {
+    
+// if (concluiuEnsinoMedio &&
+//     temMaisDeDezoitoAnos && 
+//     fazOutraFaculdade 
+// ) {
+// console.log("pode se matricular")
+// } else {
+//     console.log("Não pode se matricular") }
+// }
+// validarCandidato(
+//     concluiuEnsinoMedio,
+//     temMaisDeDezoitoAnos,
+//     fazOutraFaculdade 
+// )
+
+
+// >>>>>>> master
