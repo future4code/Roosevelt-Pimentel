@@ -108,7 +108,3 @@
        
     } else {
        alert("O jogo acabou.")
-    }
-   
-    
-   
