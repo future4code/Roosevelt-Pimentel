@@ -1,0 +1,14 @@
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "Rogerio",
+    "email": "rogerinhoDaQuebrada@gmail.com",
+    "password": "roger1n0"
+}
+
+
+### 
+
+
+GET http://localhost:3003/users
