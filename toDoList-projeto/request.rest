@@ -1,0 +1,35 @@
+### // endpoint criar usuario
+
+POST http://localhost:3003/user 
+Content-Type: application/json
+
+{
+ "name": "Roosevelt Andrade",
+ "nickname": "roozik",
+ "email": "rooseveltandrade14@gmail.com"
+}
+
+### // endpoint buscar id do usuario
+
+GET http://localhost:3003/user/1650932714571 
+
+### // endpoint editar Usuario
+
+POST http://localhost:3003/user/1650932714571
+Content-Type: application/json
+
+{
+	"name": "Roosevelt Lindo",
+	"nickname": "lindão"
+}
+
+
+### // endpoint criar Tarefa
+
+POST http://localhost:3003/tarefa 
+Content-Type: application/json
+
+
+### // endpoint buscar tarefa
+
+GET http://localhost:3003/tarefa/001 
