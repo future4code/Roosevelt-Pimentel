@@ -42,4 +42,3 @@ export let products: product[] = [
         image_url: "https://static.clubeextra.com.br/img/uploads/1/313/590313.png",
     }
 ]
-
