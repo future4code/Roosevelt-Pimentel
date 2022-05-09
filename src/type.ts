@@ -4,3 +4,10 @@ export type user = {
     email: string,
     password: string
 }
+
+export type product = {
+    id: string | number | undefined | number, 
+    name: string,
+    price: string,
+    image_url: string
+}
