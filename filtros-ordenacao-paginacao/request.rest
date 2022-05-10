@@ -1,0 +1,27 @@
+### // endpoint - buscar todas as receitas com queries
+
+GET http://localhost:3003/recipes?title=cenoura&sart=title&order-DESC&page=1&=
+
+### // retorno padrão desse backend 
+
+GET http://localhost:3003/recipes
+
+### // Pegando todos os usuários
+
+GET http://localhost:3003/users
+
+
+### // Pegando usuario pelo nome
+
+GET http://localhost:3003/users?name=sater
+
+### // retorno padrão desse backend
+
+GET http://localhost:3003/type/
+
+
+### // retorno back
+
+GET http://localhost:3003/type/
+
+
