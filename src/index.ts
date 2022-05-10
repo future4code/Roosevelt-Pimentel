@@ -5,8 +5,8 @@ import createProduct from "./endpoints/createProduct";
 import getAllProducts from "./endpoints/getAllProducts";
 import purchases from "./endpoints/purchasesUsers"
 
-app.post("/users", createUser )
-app.get("/users", getAllUsers)
-app.post("/products",createProduct )
-app.get("/products", getAllProducts)
-app.post("purchases")
+app.post("/users", createUser );
+app.get("/users", getAllUsers);
+app.post("/products",createProduct );
+app.get("/products", getAllProducts);
+app.post("purchases");
