@@ -1,6 +1,7 @@
 /**************************** IMPORTS ******************************/
 
 import express, { Express, Request, Response } from "express"
+import createUser from "./endpoints/createUsers";
 import cors from "cors"
 import knex from "knex"
 import dotenv from "dotenv"
@@ -155,3 +156,5 @@ app.get('/posts/:id', async (req: Request, res: Response) => {
 app.listen(3003, () => {
    console.log("Server running on port 3003")
 })
+
+
