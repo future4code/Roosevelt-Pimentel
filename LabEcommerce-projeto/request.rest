@@ -1,0 +1,31 @@
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "Rogerio",
+    "email": "rogerinhoDaQuebrada@gmail.com",
+    "password": "roger1n0"
+}
+
+
+### 
+
+
+GET http://localhost:3003/users
+
+
+###
+
+
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "Bolacha",
+    "price": "2,50",
+    "image_url": "https://cf.shopee.com.br/file/ee0c44c1ab9fd232c3677805be4c4b55"
+}
+
+###
+
+GET http://localhost:3003/products
